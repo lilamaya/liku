@@ -1,0 +1,29 @@
+import os
+print("+++++MenuDrivenProgram+++++")
+while True:
+	print()
+	print("Please Input Your Choice:" , end = '')
+	p = input()
+	p = p.lower()
+
+	if (("open" in p) or ("run" in p) or ("start" in p)) and (("chrome" in p) or ("web" in p and "browser" in p) or ("search" in p and "engine" in p)):
+		os.system("chrome")
+
+	elif (("show" in p) or ("display" in p) or ("tell" in p) ) and (("today" in p) or ("present" in p)) and ("date" in p):
+		os.system('date')
+
+	elif (("show" in p) or ("display" in p) or ("tell" in p) or "current" in p ) and ("time" in p):
+		os.system('time')
+
+	elif (("open" in p) or ("run" in p) or ("start" in p)) and (("notepad" in p) or ("editor" in p) or ("writing" in p and "pad" in p) or ("text" in p and "pad" in p)):
+		os.system("notepad")
+
+	elif (("run" in p) or ("open" in p) or ("start" in p) or ("play" in p)) and (("media" in p and "player" in p) or (("audio" in p or "video" in p) and "player" in p)):
+		os.system("wmplayer")
+
+
+	elif (("exit" in p) or ("stop" in p) or ("quit" in p) or ("close" in p)):
+		break
+
+else:
+	print("Sorry, Please input the correct one")
